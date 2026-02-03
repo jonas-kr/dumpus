@@ -2,7 +2,7 @@
 
 A modern, responsive landing page for a data analytics and visualization platform. Dumpus enables users to analyze data and generate statistics, charts, and visualizations through an intuitive interface.
 
-![Dumpus Preview](images/responsive_device_36%202.png)
+![Dumpus Preview](/homePage.png)
 
 ## 🌟 Features
 
