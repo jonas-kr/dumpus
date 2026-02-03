@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 10rem;
-    padding: 0 21rem;
+    padding: 0 15rem;
     background-color: #020617;
     color: #FFF;
     z-index: 1;
@@ -80,7 +80,7 @@ header {
     justify-content: center;
     border-radius: 1rem;
     border: 0.1rem solid #00d4ff;
-    padding: 0.2rem 1rem;
+    padding: 0.7rem 1rem;
 }
 
 .search-bar input {
@@ -130,7 +130,7 @@ header {
 .search-login .loginbtn a {
     font-size: 1.5rem;
     color: #020617;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Rubik', Courier;
 
 }
@@ -185,9 +185,11 @@ header {
     padding: 1.3rem 2rem;
     border-radius: 1rem;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 3rem;
     cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+
 }
 
 .down-container img {
@@ -208,15 +210,29 @@ header {
 }
 
 .container-key {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8rem 15rem;
+    gap: 3rem;
+}
+
+.key-img {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 8rem 3rem;
+    flex-direction: column;
 }
 
-.container-key img {
-    width: 35vw;
+.key-img img {
+    width: 100%;
+}
+
+.key-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 .key-content h1 {
@@ -233,6 +249,11 @@ header {
     font-weight: 100;
     color: #fff;
     margin-bottom: 1rem;
+}
+
+.boxes-container {
+
+    width: 100%;
 }
 
 .icon {
@@ -281,13 +302,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7rem 21rem;
+    padding: 7rem 15rem;
     gap: 13rem;
 }
 
-.trial-img img {
-    width: 20vw;
+.trial-content {
+    width: 70%;
 
+}
+
+.trial-img {
+    width: 30%;
+}
+
+.trial-img img {
+    width: 100%;
 }
 
 span {
@@ -302,6 +331,8 @@ span {
     border: none;
     background: -webkit-linear-gradient(#4fd9ff, #22a3ea);
     font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+
 }
 
 .loginbtn1 a {
@@ -328,7 +359,7 @@ span {
 }
 
 .download {
-    padding: 5rem 21rem;
+    padding: 5rem 15rem;
     background-color: #151824;
 
 }
@@ -366,7 +397,7 @@ span {
 
 footer {
     background-color: #020617;
-    padding: 8rem 21rem 1rem 21rem;
+    padding: 8rem 15rem 1rem 15rem;
 
 }
 
@@ -502,8 +533,7 @@ footer {
     }
 
     .trial,
-    .download
-    {
+    .download {
         padding: 8rem 2.5rem;
     }
 
@@ -511,20 +541,19 @@ footer {
         padding: 8rem 2.5rem 1rem 2.5rem;
 
     }
-    .box{
+
+    .box {
         width: 100%;
     }
 }
 
 @media (max-width:768px) {
-	.home{
-	height:100vh;
-	background-color:#02061A;
-	}
-	.home-img{
-position:absolute;
-bottom:0;
-	}
+    .home {
+        height: 100vh;
+        background-color: #02061A;
+    }
+
+
     #menu-icon {
         display: block;
         cursor: pointer;
@@ -609,14 +638,23 @@ bottom:0;
     .container-key {
         display: flex;
         flex-direction: column-reverse;
+        padding: 8rem 4rem;
+
     }
 
     .key-img {
-        text-align: center;
+        width: 100%;
+        flex-direction: row;
     }
 
     .key-img img {
-        width: 80%;
+        width: 100%;
+    }
+
+    .key-content {
+        padding-top: 12rem;
+        width: 100%;
+        flex-direction: column;
     }
 
     .trial {
@@ -628,6 +666,7 @@ bottom:0;
 
     .trial-img {
         text-align: center;
+        width: 100%;
     }
 
     .trial-img img {
